@@ -32,3 +32,22 @@ variable "inputname" {
   type = string
   description = "Set the name of the VPC"
 }
+
+# tuple is like list but supports multiple datatypes 
+variable "mytuple" {
+  type = tuple([ string,number,string ])
+  default = [ "cat", 1, "dog" ]
+}
+
+
+# object is like map but supports multiple datatypes 
+variable "myobject" {
+  type = object({
+    name = string,
+    port = list(number)
+  })
+  default = {
+    name = "AK"
+    port = [ 22,25,80 ]
+  }
+}
