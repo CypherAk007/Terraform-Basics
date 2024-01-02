@@ -5,5 +5,5 @@ provider "aws" {
 module "ec2" {
   source = "./ec2"
 #   How to create multiple ec2 instances
-  for_each = toset(["dev","test","prod"])
+  for_each = toset(var.ec2names)
 }
