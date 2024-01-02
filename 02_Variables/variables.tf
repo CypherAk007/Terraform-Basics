@@ -24,3 +24,11 @@ variable "mymap" {
     key2 = "Value2"
   }
 }
+
+
+# INPUT variable
+
+variable "inputname" {
+  type = string
+  description = "Set the name of the VPC"
+}
