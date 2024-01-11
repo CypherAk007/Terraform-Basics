@@ -6,3 +6,7 @@
 - git push origin <new-branch-name>
 
 - https://medium.com/@sharath.ravi/how-to-revert-a-git-commit-from-a-remote-repository-easy-step-by-step-tutorial-358f4a72fa1d
+
+## Access aws cred access and secret key
+- cat ~/.aws/credentials
+
